@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Lanthan'
+        label 'Agent1'
     }
 
     stages {
@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script{
                     try{
-                        sh 'mysql -u root -proot -e "create database testdb6"'
+                        sh 'mysql -u root -proot -e "create database testdb7"'
                     }
                     catch (e) {
                         echo e.getMessage()
