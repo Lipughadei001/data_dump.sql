@@ -7,7 +7,6 @@ pipeline {
         stage('Cloning from git') {
             steps {
                 git 'https://github.com/Lipughadei001/data_dump.sql.git'
-                sh 'ls -la'
             }
         }
         stage('Dump_sql') {
