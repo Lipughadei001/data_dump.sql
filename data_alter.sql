@@ -5,5 +5,5 @@
 -- Server version       5.5.68-MariaDB
 
 USE `testdb6`;
-ALTER TABLE `exp1` ADD `phone` int(20);
+ALTER TABLE `exp1` ADD `phone1` int(20);
 UPDATE `exp1` SET `phone`="0000000001" WHERE `id`="2" ;
