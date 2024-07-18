@@ -6,4 +6,5 @@
 
 USE `testdb6`;
 ALTER TABLE `exp1` ADD `phone2` int(20);
+ALTER TABLE `exp1` ADD `email_id varchar(20);
 UPDATE `exp1` SET `phone`="0000000001" WHERE `id`="2" ;
