@@ -4,6 +4,11 @@ pipeline {
     }
 
     stages {
+        stage('Taking backup dump file') {
+            steps {
+                sh 'mysqldump -u root -proot testdb7 > data_dump.sql'
+            }
+        }
         stage('Cloning from git') {
             steps {
                 git 'https://github.com/Lipughadei001/data_dump.sql.git'
