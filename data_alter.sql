@@ -6,4 +6,4 @@
 
 USE `testdb6`;
 ALTER TABLE `exp1` ADD COLUMN `phone` int(20);
-UPDATE TABLE `exp1` SET `phone`='0000000000';
+UPDATE `exp1` SET `phone`="0000000000" WHERE `id`="1" ;
