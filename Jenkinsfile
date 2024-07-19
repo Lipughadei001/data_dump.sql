@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Taking backup dump file') {
             steps {
-                sh 'mysqldump -u root -proot testdb7 > data_dump.sql'
+                sh 'mysqldump -u root -proot testdb7 > data_dump1.sql'
             }
         }
         stage('Cloning from git') {
