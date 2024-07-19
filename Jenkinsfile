@@ -7,6 +7,7 @@ pipeline {
         stage('Taking backup dump file') {
             steps {
                 sh 'mysqldump -u root -proot testdb7 > data_dump1.sql'
+                sh 'aws s3 cp data_dump1.sql s3://datadump001/Data_dump/'
             }
         }
         stage('Cloning from git') {
